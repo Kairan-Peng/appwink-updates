@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>AppWink</title>
+        <item>
+            <title>0.1.14</title>
+            <pubDate>Wed, 15 Apr 2026 21:40:12 +0800</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>0.1.14</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.14-build15-mac.html</sparkle:releaseNotesLink>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.14-build15-mac.dmg" length="4080111" type="application/octet-stream" sparkle:edSignature="wp1CQS53B7AbdzAZz0Lt0j5beXQeI/MmKVQ9khrmMXUph9hxtldUU2DLU/8WWG1K9A8ohRa9yAHMwobO1sfjDA=="/>
+        </item>
+    </channel>
+</rss>

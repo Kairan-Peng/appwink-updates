@@ -3,6 +3,18 @@
     <channel>
         <title>AppWink</title>
         <item>
+            <title>0.1.15</title>
+            <pubDate>Sun, 19 Apr 2026 01:37:41 +0800</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>0.1.15</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.15-build16-mac.html</sparkle:releaseNotesLink>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.15-build16-mac.dmg" length="4080773" type="application/octet-stream" sparkle:edSignature="+TEjwCV4YTbwnibscBSuF16NjF09cgC4XL2+VQv/b4ycVSP7E8B1FlyQl5fl5xZavN8Gg8ytDsqFvTghdfxhAA=="/>
+            <sparkle:deltas>
+                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink16-15.delta" sparkle:deltaFrom="15" length="215606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vzvzCfY7UW+PSwZ3pBFzGwFviYPktVoRDpP0xAwxz7tI1Zc0nv0xYlFNJI74gBXHsHTwrIZopuxZBQ9kezJVAw=="/>
+            </sparkle:deltas>
+        </item>
+        <item>
             <title>0.1.14</title>
             <pubDate>Wed, 15 Apr 2026 21:40:12 +0800</pubDate>
             <sparkle:version>15</sparkle:version>

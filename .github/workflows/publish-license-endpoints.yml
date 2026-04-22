@@ -1,0 +1,74 @@
+name: Publish AppWink License Endpoints
+
+on:
+  workflow_dispatch:
+    inputs:
+      primary_base_url:
+        description: Optional override for the primary license API base URL
+        required: false
+        default: ""
+        type: string
+      backup_base_urls:
+        description: Optional comma/newline separated backup license API base URLs
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      DEFAULT_PRIMARY_BASE_URL: ${{ vars.APPWINK_LICENSE_API_BASE_URL }}
+      DEFAULT_BACKUP_BASE_URLS: ${{ vars.APPWINK_LICENSE_BACKUP_BASE_URLS }}
+      INPUT_PRIMARY_BASE_URL: ${{ inputs.primary_base_url }}
+      INPUT_BACKUP_BASE_URLS: ${{ inputs.backup_base_urls }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate endpoint config
+        run: |
+          python3 - <<'PY'
+          import datetime
+          import json
+          import os
+          from pathlib import Path
+
+          primary = (os.environ["INPUT_PRIMARY_BASE_URL"] or os.environ["DEFAULT_PRIMARY_BASE_URL"]).strip()
+          if not primary:
+              raise SystemExit("Missing APPWINK_LICENSE_API_BASE_URL repository variable or workflow input")
+
+          raw_backups = os.environ["INPUT_BACKUP_BASE_URLS"] or os.environ["DEFAULT_BACKUP_BASE_URLS"]
+          backups = [
+              item.strip()
+              for part in raw_backups.replace("\r", "\n").replace(",", "\n").split("\n")
+              for item in [part]
+              if item.strip()
+          ]
+
+          out = {
+              "version": 1,
+              "primary_base_url": primary,
+              "backup_base_urls": backups,
+              "updated_at": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
+              "source": "github-actions",
+          }
+          path = Path("license/appwink-license-endpoints.json")
+          path.parent.mkdir(parents=True, exist_ok=True)
+          path.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
+          PY
+
+      - name: Commit endpoint config
+        run: |
+          if git diff --quiet -- license/appwink-license-endpoints.json; then
+            echo "No endpoint config changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add license/appwink-license-endpoints.json
+          git commit -m "Update AppWink license endpoints"
+          git push

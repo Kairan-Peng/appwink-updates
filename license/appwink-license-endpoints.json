@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "primary_base_url": "https://awink.art/api/v1/appwink/licenses",
+  "backup_base_urls": [],
+  "updated_at": "2026-04-22T00:00:00Z",
+  "source": "manual-bootstrap"
+}

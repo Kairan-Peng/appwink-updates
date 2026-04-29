@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.17 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink 0.1.17 Release Notes</h1>
+    <h1>AppWink v0.1.17</h1>
+<p>This release removes the last AppWink-defined Keychain path from the direct license runtime and keeps the packaged direct build on app-local state plus live server validation only.</p>
+<h2>What's New</h2>
+<p>migration or rescue path. License state now lives entirely in AppWink-owned app-local persistence on the Mac.</p>
+<p>responses from the AppWink license server, so the release keeps the earlier remote-only validation boundary intact.</p>
+<p>maintainer-issued license activation, but old license state that existed only in Keychain is no longer auto-rescued.</p>
+<ul><li>The direct-license runtime no longer carries any AppWink-defined Keychain</li><li>Positive paid-state checks still require live <code>activate</code> / <code>refresh</code></li><li>The direct build still preserves the existing <code>Start Trial</code> flow and manual</li></ul>
+<h2>Install Notes</h2>
+<p>direct-license state and normal relaunch validation remain compatible.</p>
+<p>entries, this release expects the license to be entered again or re-issued rather than migrated locally.</p>
+<ul><li>Existing direct users can install <code>0.1.17</code> over <code>0.1.16</code>; current app-local</li><li>If an older machine still kept direct-license state only in legacy Keychain</li></ul>
+<h2>Known Limitations</h2>
+<p>Connect sandbox smoke before it can be treated as fully closed.</p>
+<p>remains open on this machine; the provider-level fallback to <code>verificationRequired</code> is covered by focused tests.</p>
+<ul><li>The Mac App Store purchase / restore path still needs a final App Store</li><li>A fully isolated packaged no-network GUI smoke for the direct build still</li></ul>
+<h2>Verification Scope</h2>
+<p>packaged activation smoke against the live <code>awink.art</code> license server</p>
+<ul><li><code>swift build --product AppWink</code></li><li><code>swift test --filter DirectLicenseStateStoreTests</code></li><li><code>swift test --filter DirectLicenseEntitlementProviderTests</code></li><li><code>SIGNING_MODE=none ./Scripts/package_app.sh release</code>, followed by a local</li></ul>
+  </main>
+</body>
+</html>

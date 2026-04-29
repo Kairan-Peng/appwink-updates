@@ -4,30 +4,12 @@
         <title>AppWink</title>
         <item>
             <title>0.1.17</title>
-            <pubDate>Thu, 30 Apr 2026 00:37:07 +0800</pubDate>
+            <pubDate>Thu, 30 Apr 2026 00:52:04 +0800</pubDate>
             <sparkle:version>18</sparkle:version>
             <sparkle:shortVersionString>0.1.17</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.17-build18-mac.html</sparkle:releaseNotesLink>
             <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.17-build18-mac.dmg" length="4814126" type="application/octet-stream" sparkle:edSignature="e3xmRtsEtS0z4Gju6Z3/4gBCvgN0n79efrDQGqgDrKo4DUtu4LH/BguP9lyI+3kkBAC18NBIpM2XGnFln3PzCA=="/>
-        </item>
-        <item>
-            <title>0.1.16</title>
-            <pubDate>Wed, 29 Apr 2026 21:45:22 +0800</pubDate>
-            <sparkle:version>17</sparkle:version>
-            <sparkle:shortVersionString>0.1.16</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.16-build17-mac.html</sparkle:releaseNotesLink>
-            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.16-build17-mac.dmg" length="4820642" type="application/octet-stream" sparkle:edSignature="O5IMGtCIkvfKiPgBow6W8GRM3dZ9xCE53o3Toc1Q8TY9M6XluUR1lXxF35f8D2gMGs/GNHGCi7EE412iXDPvBw=="/>
-        </item>
-        <item>
-            <title>0.1.15</title>
-            <pubDate>Sun, 19 Apr 2026 01:37:41 +0800</pubDate>
-            <sparkle:version>16</sparkle:version>
-            <sparkle:shortVersionString>0.1.15</sparkle:shortVersionString>
-            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.15-build16-mac.html</sparkle:releaseNotesLink>
-            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.15-build16-mac.dmg" length="4080773" type="application/octet-stream" sparkle:edSignature="+TEjwCV4YTbwnibscBSuF16NjF09cgC4XL2+VQv/b4ycVSP7E8B1FlyQl5fl5xZavN8Gg8ytDsqFvTghdfxhAA=="/>
         </item>
     </channel>
 </rss>

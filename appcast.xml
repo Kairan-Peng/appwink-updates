@@ -10,11 +10,6 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.17-build18-mac.html</sparkle:releaseNotesLink>
             <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.17-build18-mac.dmg" length="4814126" type="application/octet-stream" sparkle:edSignature="e3xmRtsEtS0z4Gju6Z3/4gBCvgN0n79efrDQGqgDrKo4DUtu4LH/BguP9lyI+3kkBAC18NBIpM2XGnFln3PzCA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink18-17.delta" sparkle:deltaFrom="17" length="331354" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="980432" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="oIqv0Nf2MoHxuu7dRCq6HF0u0GykDsKJ6OFTa4m6FDoWKyYhpz6g7GZYjaZUF8gD+6OnAqtUF9VGNZXqcBQ5Cg=="/>
-                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink18-16.delta" sparkle:deltaFrom="16" length="915274" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="NxI2MgvJby7idRrIfvEbdUMiRrnDdHWI/qX22dLui792pldcOnVL2DGZnLGKQQLJ3OjqOnv9Mz1htjYPJvz/Bg=="/>
-                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink18-15.delta" sparkle:deltaFrom="15" length="927190" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vaXCsg0luG5KEzPlRsic/wVQEeibMosEk9fA/MjDirgikLO/0oiFojP5ga6UOoNszL/Qo6/vK0GjxSGvg1rUDw=="/>
-            </sparkle:deltas>
         </item>
         <item>
             <title>0.1.16</title>
@@ -24,10 +19,6 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.16-build17-mac.html</sparkle:releaseNotesLink>
             <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.16-build17-mac.dmg" length="4820642" type="application/octet-stream" sparkle:edSignature="O5IMGtCIkvfKiPgBow6W8GRM3dZ9xCE53o3Toc1Q8TY9M6XluUR1lXxF35f8D2gMGs/GNHGCi7EE412iXDPvBw=="/>
-            <sparkle:deltas>
-                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink17-16.delta" sparkle:deltaFrom="16" length="920194" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="KSe/lC0kPx+J+dd6SHL0+yYjO5Ro18Kb76oQUrsFXF6viSN45IDzcLrZiZYbiQKeV2v+3fBK9VqPz6hF/rquBA=="/>
-                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink17-15.delta" sparkle:deltaFrom="15" length="936846" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="xsGmEhtXNNkPjpiCJ34p97rSsqg5b+pL26aNaXOsYg1HOn+BE1DdMqiS9QMYY5hapOVIVhR50yGotXkahy/MAw=="/>
-            </sparkle:deltas>
         </item>
         <item>
             <title>0.1.15</title>
@@ -37,9 +28,6 @@
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.15-build16-mac.html</sparkle:releaseNotesLink>
             <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.15-build16-mac.dmg" length="4080773" type="application/octet-stream" sparkle:edSignature="+TEjwCV4YTbwnibscBSuF16NjF09cgC4XL2+VQv/b4ycVSP7E8B1FlyQl5fl5xZavN8Gg8ytDsqFvTghdfxhAA=="/>
-            <sparkle:deltas>
-                <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink16-15.delta" sparkle:deltaFrom="15" length="215606" type="application/octet-stream" sparkle:deltaFromSparkleExecutableSize="977808" sparkle:deltaFromSparkleLocales="de,he,ar,el,ja,fa,uk" sparkle:edSignature="vzvzCfY7UW+PSwZ3pBFzGwFviYPktVoRDpP0xAwxz7tI1Zc0nv0xYlFNJI74gBXHsHTwrIZopuxZBQ9kezJVAw=="/>
-            </sparkle:deltas>
         </item>
     </channel>
 </rss>

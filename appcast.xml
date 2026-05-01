@@ -4,12 +4,12 @@
         <title>AppWink</title>
         <item>
             <title>0.1.17</title>
-            <pubDate>Thu, 30 Apr 2026 00:52:04 +0800</pubDate>
+            <pubDate>Fri, 01 May 2026 12:34:00 +0800</pubDate>
             <sparkle:version>18</sparkle:version>
             <sparkle:shortVersionString>0.1.17</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.17-build18-mac.html</sparkle:releaseNotesLink>
-            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.17-build18-mac.dmg" length="4814126" type="application/octet-stream" sparkle:edSignature="e3xmRtsEtS0z4Gju6Z3/4gBCvgN0n79efrDQGqgDrKo4DUtu4LH/BguP9lyI+3kkBAC18NBIpM2XGnFln3PzCA=="/>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.17-build18-mac.dmg" length="4814701" type="application/octet-stream" sparkle:edSignature="RhwAK/Uvf+uyZaLM9z1coDwSWBp8yL3DEqzVIS5BvA9rtmIIXOiwwiHBfDTl7IwVtv62Oty1pphDsvKk8iVRDQ=="/>
         </item>
     </channel>
 </rss>

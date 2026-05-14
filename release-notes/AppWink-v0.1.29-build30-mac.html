@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.29 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink 0.1.29 Release Notes</h1>
+    <h1>AppWink v0.1.29</h1>
+<p>This release tightens the hotkey configuration and Settings windows so the primary controls fit more cleanly in the compact desktop app frame. Existing app bindings, shortcut assignments, direct-license state, Sparkle update settings, and saved utility preferences remain compatible with <code>0.1.28</code>.</p>
+<h2>What's New</h2>
+<p>Settings window to a smaller fixed frame, with startup sizing corrections for older saved window dimensions.</p>
+<p>are larger, no longer have an extra outer border, shortcut fields are narrower, and enable switches are taller.</p>
+<p>the hotkey configuration, Settings, and About/Help surfaces.</p>
+<p>preserving the existing grouped-list styling and separators.</p>
+<p>About/Help pages so section labels no longer sit directly under the title bar.</p>
+<p><code>Add App</code>, while Simplified Chinese uses <code>添加权限</code>.</p>
+<ul><li>Reduced the hotkey configuration window to a compact square frame and the</li><li>Made hotkey rows denser while keeping the app icon easier to read: app icons</li><li>Reduced the global page insets and the empty top, side, and bottom gutters in</li><li>Shortened Settings rows in both the <code>Feature Toggles</code> and <code>Other</code> groups while</li><li>Added a little breathing room above the first section title on Settings and</li><li>Simplified the header action copy: English now uses <code>Permissions</code> and</li></ul>
+<h2>Install Notes</h2>
+<p>saved app bindings, shortcut assignments, direct-license state, Sparkle settings, or stored Settings feature-toggle preference values.</p>
+<p>compact dimensions the next time those windows are opened.</p>
+<p>flow, Hidden Bar menu-bar shape, and Mac App Store purchase boundary are unchanged.</p>
+<ul><li>Existing users can install <code>0.1.29</code> in place. This release does not change</li><li>Previously saved hotkey and Settings window frames may be corrected to the new</li><li>The normal hotkey toggle decision contract, update model, license activation</li></ul>
+<h2>Known Limitations</h2>
+<p>Command-dragged menu-bar order. The app cannot guarantee per-app status-item control.</p>
+<p>automatically managed" Hidden Bar behavior remains a future architecture task.</p>
+<p>sandbox evidence before it can be treated as fully closed.</p>
+<ul><li>Hidden Bar third-party icon hiding still depends on the user's</li><li>The stronger "every icon visually between a separate marker and arrow is</li><li>The Mac App Store purchase / restore path still needs final App Store Connect</li></ul>
+<h2>Verification Scope</h2>
+<p>preflight, zip, DMG, notarization, release-note export, and Sparkle feed publication scripts.</p>
+<p>hotkey configuration and Settings window frames, revised copy, row heights, icon sizing, switch sizing, and shortcut-field width.</p>
+<ul><li><code>swift test --filter BindingsListLayoutTests</code></li><li><code>swift test --filter BindingReorderPreviewTests</code></li><li><code>swift test --filter LocalizationCopyTests</code></li><li><code>swift build</code></li><li>Release-checklist <code>swift build --disable-sandbox</code></li><li>Release-checklist full <code>swift test --disable-sandbox</code></li><li><code>git diff --check</code></li><li>Release-helper <code>--help</code> checks for MAS evidence, MAS evidence checker, MAS</li><li>Isolated no-signing <code>AppWinkHotkeyListQA.app</code> UI smoke covering the compact</li></ul>
+  </main>
+</body>
+</html>

@@ -3,13 +3,13 @@
     <channel>
         <title>AppWink</title>
         <item>
-            <title>0.1.25</title>
-            <pubDate>Wed, 13 May 2026 19:00:36 +0800</pubDate>
-            <sparkle:version>26</sparkle:version>
-            <sparkle:shortVersionString>0.1.25</sparkle:shortVersionString>
+            <title>0.1.26</title>
+            <pubDate>Thu, 14 May 2026 13:48:48 +0800</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>0.1.26</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.25-build26-mac.html</sparkle:releaseNotesLink>
-            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.25-build26-mac.dmg" length="5341905" type="application/octet-stream" sparkle:edSignature="6l1grgtty83g7Ae3YvNMmyfDTtrUeInflPgG+jXUhYEIO4EjJ0x9QRVk0ze9dXgpQbOfjuKKj/zFsvhgI8QvDw=="/>
+            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.26-build27-mac.html</sparkle:releaseNotesLink>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.26-build27-mac.dmg" length="5370930" type="application/octet-stream" sparkle:edSignature="Lgr4NjRng9/LUhEK7d5wzBLlssBkmicp+e5npD5wMmAmZmVDkElvAw7jLqvQvaopeGf3vZ0Np5s61BXCxaDbAw=="/>
         </item>
     </channel>
 </rss>

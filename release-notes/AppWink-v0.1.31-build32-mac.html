@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.31 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink 0.1.31 Release Notes</h1>
+    <h1>AppWink v0.1.31</h1>
+<p>This release polishes the compact Settings page: the Virtual Keyboard delay control now has stable spacing across delay values, the Settings grouped-list background no longer darkens near the bottom edge, and the AppWink agent guide now references the Superpowers plugin entry skill directly.</p>
+<p>Existing app bindings, shortcut assignments, direct-license state, Sparkle update settings, and saved utility preferences remain compatible with <code>0.1.30</code>.</p>
+<h2>What's New</h2>
+<p>The slider keeps a fixed position while <code>0.5</code>, <code>0.75</code>, and <code>1</code> second values change inside a left-aligned reserved label frame.</p>
+<p><code>Other</code> section no longer samples a darker page-gradient area when the Settings home is at the top.</p>
+<p>plugin's <code>using-superpowers</code> skill first, then choose the narrowest applicable Superpowers skill.</p>
+<ul><li>Tightened the <code>Virtual Keyboard</code> / <code>虚拟键盘</code> delay control in Settings.</li><li>Stabilized Settings grouped-list panel backgrounds so the partially visible</li><li>Simplified <code>AGENTS.md</code> so AppWink threads directly use the Superpowers</li></ul>
+<h2>Install Notes</h2>
+<p>hotkey registration, update feed selection, or entitlement behavior.</p>
+<ul><li>Existing users can install <code>0.1.31</code> in place.</li><li>This release does not change stored configuration, license persistence,</li></ul>
+<h2>Known Limitations</h2>
+<p>Command-dragged menu-bar order. The app cannot guarantee per-app status-item control.</p>
+<p>automatically managed" Hidden Bar behavior remains a future architecture task.</p>
+<p>sandbox evidence before it can be treated as fully closed.</p>
+<ul><li>Hidden Bar third-party icon hiding still depends on the user's</li><li>The stronger "every icon visually between a separate marker and arrow is</li><li>The Mac App Store purchase / restore path still needs final App Store Connect</li></ul>
+<h2>Verification Scope</h2>
+<p>APP_BUNDLE_NAME=AppWinkVirtualKeyboardSpacingQA APP_DISPLAY_NAME=AppWinkVirtualKeyboardSpacingQA BUNDLE_ID=com.kairanpeng.appwink.virtualkeyboardspacingqa ./Scripts/package_app.sh release`</p>
+<p><code>0.5 s</code>, <code>0.75 s</code>, and <code>1 s</code></p>
+<p><code>x=953, width=96</code> across delay values in the temporary QA package</p>
+<p>panel uses the same stable fill treatment as <code>Feature Toggles</code></p>
+<ul><li><code>swift build</code></li><li><code>git diff --check</code></li><li>No-signing temporary package build with `SIGNING_MODE=none</li><li>Computer Use visual verification of the Settings Virtual Keyboard row at</li><li>AX position checks confirming the Virtual Keyboard slider remains at</li><li>Computer Use visual verification that the partially visible Settings <code>Other</code></li></ul>
+  </main>
+</body>
+</html>

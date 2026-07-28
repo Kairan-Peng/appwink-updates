@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.36 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink v0.1.36</h1>
+<p>This release refines the Network Monitor status item and the shared feature detail header layout.</p>
+<h2>What's New</h2>
+<p>tighter menu-bar spacing.</p>
+<p>right-aligned in a <code>28pt</code> column, followed by a <code>2pt</code> gap, while units are left-aligned in a <code>26pt</code> column.</p>
+<p>eight Settings feature detail pages, including wrapped summaries.</p>
+<ul><li>Reduced the Network Monitor status-item width from <code>68pt</code> to <code>56pt</code> for</li><li>Aligned both speed lines around one shared boundary: numeric values are</li><li>Kept the unitless <code>--</code> fallback centered across the full status-item width.</li><li>Vertically centered the icon against the complete description text on all</li></ul>
+<h2>Install Notes</h2>
+<p>notarized DMG.</p>
+<p>direct-license state, and saved utility settings.</p>
+<ul><li>Existing users can install <code>0.1.36</code> in place over <code>0.1.35</code> from the formal</li><li>The update is designed to preserve existing bindings, preferences,</li><li>Network Monitor remains opt-in and requires no new permission.</li></ul>
+<h2>Known Limitations</h2>
+<p>interface; it does not aggregate interfaces or detect VPN state.</p>
+<p>used by the current formatter and fonts. Arbitrarily longer future formatter output is outside that fixed-width guarantee.</p>
+<p>the Mac was locked. The renderer geometry and actual AppKit draw operations are covered by automated tests; the preceding isolated pass already verified the <code>56pt</code> width and all eight vertically centered feature descriptions.</p>
+<p>Command-drag/relaunch ordering, Hidden Bar pusher-left interaction, physical interface switching, disconnect/reconnect, sleep/wake, temporary reader failure, and entitlement loss/restore remain NOT RUN rather than passed.</p>
+<ul><li>Network Monitor continues to read only the current system-selected primary</li><li>The compact fixed columns cover the representative <code>100.0 MB/s</code> boundary</li><li>A fresh visual pass of the final shared-column geometry was NOT RUN because</li><li>Light and increased-contrast menu bars, a real notched display,</li></ul>
+<h2>Verification Scope</h2>
+<p>including numeric/unit geometry, representative font capacity, centered fallback, and actual <code>NSImage</code> draw operations</p>
+<p>upload and <code>44 KB/s</code> download lines in the compact <code>56pt</code> item, plus all eight Simplified-Chinese feature descriptions centered without truncation</p>
+<p>installed production process remained untouched</p>
+<ul><li>Focused <code>NetworkStatusItemControllerTests</code> (<code>24</code> tests, <code>0</code> failures),</li><li>Focused <code>SettingsFeatureLayoutTests</code> (<code>3</code> tests, <code>0</code> failures)</li><li>Fresh full <code>swift test</code> (<code>412</code> tests, <code>0</code> failures)</li><li>Fresh <code>AppWink</code> and <code>AppWinkMAS</code> product builds</li><li><code>git diff --check</code> and final changed-file scope review</li><li>Earlier isolated no-signing runtime QA showing complete live <code>182 KB/s</code></li><li>Exact cleanup of the later isolated column-alignment QA identity while the</li></ul>
+<h2>Published Artifacts</h2>
+<p>Publication, signed/notarized artifact verification, latest-only Sparkle feed publication, and local installation evidence will be recorded after the release workflow completes.</p>
+  </main>
+</body>
+</html>

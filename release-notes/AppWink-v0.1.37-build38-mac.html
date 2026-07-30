@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.37 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink v0.1.37</h1>
+<p>This release expands global hotkeys beyond applications so selected folders and files can be opened directly.</p>
+<h2>What's New</h2>
+<p>files, and document packages.</p>
+<p>configurable opening modes for folders and files.</p>
+<p>as the default file action, and optional selected-application handlers for both folders and files.</p>
+<p>handling, and target-aware menu, quick-switch, virtual-keyboard, and icon presentation.</p>
+<p>actually need them.</p>
+<ul><li>Added one unified <code>Add</code> / <code>添加</code> flow for applications, ordinary folders,</li><li>Kept application hotkeys on the existing activate/hide toggle while adding</li><li>Added Finder (New Tab) as the default folder action, current system default</li><li>Added bookmark-backed target persistence, opening-mode-aware duplicate</li><li>Limited Accessibility and Finder Automation requirements to actions that</li></ul>
+<h2>Install Notes</h2>
+<p>application bindings, shortcuts, ordering, preferences, and license state are designed to migrate without manual reconfiguration.</p>
+<p>macOS's one-time Finder Automation consent prompt. File bindings and folders opened with a selected application do not require those permissions.</p>
+<ul><li>Existing users can install <code>0.1.37</code> in place over <code>0.1.36</code>; existing</li><li>Opening a folder with Finder (New Tab) requires Accessibility and may show</li></ul>
+<h2>Known Limitations</h2>
+<p>immediately, macOS may temporarily omit that window from Accessibility. AppWink then opens the selected folder in a separate Finder window instead of adding a tab to the minimized window; the original tabs remain unchanged.</p>
+<p>rapid-repeat, permission-revoke/restore, unavailable-target/handler, dynamic default-handler change, and full presentation matrix were not all rerun manually. Automated coverage and the recorded unlocked Direct QA cover the main configuration, file, selected-handler, bookmark, persistence, and Finder foreground/background paths.</p>
+<p>exception, but local signing and packaging do not constitute App Review acceptance. This release publishes the Direct notarized DMG only.</p>
+<ul><li>If a Finder browser window is minimized and its folder hotkey is triggered</li><li>The final implementation's no-window, pre-existing matching-tab,</li><li>The Mac App Store build shape includes a Finder-only temporary Apple Events</li></ul>
+<h2>Verification Scope</h2>
+<p>packaging inspection, including the Apple Events usage description</p>
+<p>duplicate rollback, renamed bookmarks, repeated file opens, persistence, selected-application folder execution, and Finder foreground/background new-tab behavior</p>
+<ul><li>Final full <code>swift test</code> (<code>639</code> tests, <code>0</code> failures) and <code>swift build</code></li><li>Focused file-system target groups (<code>87/87</code>, <code>65/65</code>, <code>200/200</code>, and <code>1/1</code>)</li><li>Final Finder service (<code>20/20</code>) and target executor (<code>17/17</code>) suites</li><li>Signed Direct, production-shape MAS, and local StoreKit MAS entitlement and</li><li>Unlocked Developer ID runtime QA for target classification, opening modes,</li><li><code>git diff --check</code>, release-helper preflights, and final changed-file review</li></ul>
+<h2>Published Artifacts</h2>
+<p>Publication, signed/notarized artifact verification, latest-only Sparkle feed publication, and local installation evidence will be recorded after the release workflow completes.</p>
+  </main>
+</body>
+</html>

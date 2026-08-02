@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.38 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink v0.1.38</h1>
+<p>This release makes folder opening feel native, simplifies transfer-rate output, and gives file/folder opening modes a more compact presentation.</p>
+<h2>What's New</h2>
+<ul><li>Default folder hotkeys now use macOS's public system-open behavior, matching the boundary of double-clicking a folder in Finder. Finder decides whether to reuse a window, open a new window or tab, and switch Space.</li><li>Removed the visible Finder menu/new-tab automation sequence and its Accessibility, Finder Automation, Apple Events usage-description, and Apple Events entitlement requirements.</li><li>Moved each folder/file opening-mode selector onto the target-name row, immediately left of the shortcut, using a compact Finder/application icon, divider, and chevron that adapts to Light and Dark appearance.</li><li>Kept the native application menu, selected checkmarks, candidate icons, keyboard/accessibility behavior, and <code>Choose Other Application...</code> action.</li><li>Network Monitor now uses <code>KB/s</code> as its minimum unit. Very low transfer rates round to <code>0 KB/s</code> instead of switching to <code>B/s</code>.</li></ul>
+<h2>Install Notes</h2>
+<ul><li>Existing users can install <code>0.1.38</code> in place over <code>0.1.37</code>; bindings, shortcuts, opening modes, order, preferences, and license state are designed to remain compatible.</li><li>The stored folder-mode discriminator remains unchanged for configuration compatibility, but its runtime behavior is now the native macOS system-open request.</li><li>Default and selected-application folder actions and both file modes require no Finder Automation permission. Application activate/hide hotkeys continue to require Accessibility.</li></ul>
+<h2>Known Limitations</h2>
+<ul><li>Finder owns default-folder window/tab/Space behavior, so the exact visible result follows the user's Finder preferences and current desktop state.</li><li>Pointer-hover appearance, VoiceOver audio, a long file name combined with an unavailable badge, and a selected non-default handler were not rerun in the compact-selector manual pass.</li><li>The complete default-folder foreground/background/minimized/not-running/ cross-Space/rapid-repeat matrix and the installed Network Monitor live-unit GUI matrix were not fully rerun before this cut; automated dispatch, permission, formatting, and presentation coverage passed.</li><li>This release publishes the Direct notarized DMG only. MAS purchase/restore and App Store Connect evidence remain separate work; the former Finder Apple Events temporary-exception blocker no longer applies.</li></ul>
+<h2>Verification Scope</h2>
+<ul><li>Full <code>swift test</code> (<code>601</code> tests, <code>0</code> failures), <code>swift build</code>, and <code>git diff --check</code></li><li>Focused default-folder system-open, action-executor, target-model, AppModel/localization, Network Monitor formatting/controller, row-layout, presentation, and presentation-resolver suites</li><li>Signed Direct, production-shape MAS, and local StoreKit MAS package checks, including absence of <code>NSAppleEventsUsageDescription</code>, Apple Events automation, and Finder temporary-exception entitlements</li><li>Isolated minimum-width GUI/AX verification in Light and Dark appearance for folder/file row order, long-folder-name truncation, Finder/system-default icons, selected checkmarks, candidate applications, and final <code>Choose Other Application...</code></li></ul>
+  </main>
+</body>
+</html>

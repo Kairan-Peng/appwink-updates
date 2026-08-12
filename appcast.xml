@@ -3,13 +3,13 @@
     <channel>
         <title>AppWink</title>
         <item>
-            <title>0.1.38</title>
-            <pubDate>Sun, 02 Aug 2026 14:46:39 +0800</pubDate>
-            <sparkle:version>39</sparkle:version>
-            <sparkle:shortVersionString>0.1.38</sparkle:shortVersionString>
+            <title>0.1.39</title>
+            <pubDate>Thu, 13 Aug 2026 00:42:44 +0800</pubDate>
+            <sparkle:version>40</sparkle:version>
+            <sparkle:shortVersionString>0.1.39</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.38-build39-mac.html</sparkle:releaseNotesLink>
-            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.38-build39-mac.dmg" length="6219978" type="application/octet-stream" sparkle:edSignature="oxh+6T5xXBa9v37xkrSfs9dQ+o/cdInTxjRxzrQcUQa/9j8swslUYs+NOVH9+/nCAd0JohVkDQF7ithTdk4/Bg=="/>
+            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.39-build40-mac.html</sparkle:releaseNotesLink>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.39-build40-mac.dmg" length="6209321" type="application/octet-stream" sparkle:edSignature="ffijK1pVztrSzQFtWzQk1fejZOvpgG71xNlmf65637gRoeAZ/qZU7C7Q5jOAQGs9hB3aByS+bAwRqrtI+KviAA=="/>
         </item>
     </channel>
 </rss>

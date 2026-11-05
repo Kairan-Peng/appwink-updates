@@ -1,7 +1,18 @@
-<?xml version="1.0" standalone="yes"?>
+<?xml version='1.0' encoding='utf-8'?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
         <title>AppWink</title>
+        <item>
+            <title>0.1.45</title>
+            <pubDate>Thu, 05 Nov 2026 21:58:01 +0800</pubDate>
+            <link>https://github.com/Kairan-Peng/AppWink/releases/tag/v0.1.45</link>
+            <sparkle:fullReleaseNotesLink>https://github.com/Kairan-Peng/AppWink/releases/tag/v0.1.45</sparkle:fullReleaseNotesLink>
+            <sparkle:version>46</sparkle:version>
+            <sparkle:shortVersionString>0.1.45</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.45-build46-mac.html</sparkle:releaseNotesLink>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.45-build46-mac.dmg" length="5465615" type="application/octet-stream" sparkle:edSignature="J0KJfjzrMNQcDCkZfuljywQcu+7Wm8KNSv1yQi8ON7G1TOV8KlrSv37/tj6cEAwFd66Zpdb2rWINFOF3KivbAw==" />
+        </item>
         <item>
             <title>0.1.42</title>
             <pubDate>Sat, 29 Aug 2026 15:40:52 +0800</pubDate>
@@ -11,7 +22,7 @@
             <sparkle:shortVersionString>0.1.42</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:releaseNotesLink>https://kairan-peng.github.io/appwink-updates/release-notes/AppWink-v0.1.42-build43-mac.html</sparkle:releaseNotesLink>
-            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.42-build43-mac.dmg" length="6236067" type="application/octet-stream" sparkle:edSignature="6IcPTCjHm5gg557QEG84YibBTKN9vJxI6JNPpm0E7Tl15rrU+ksLZJiNfRtec10OTz8ePQaqcniC+Tb2eZQUDQ=="/>
+            <enclosure url="https://kairan-peng.github.io/appwink-updates/downloads/AppWink-v0.1.42-build43-mac.dmg" length="6236067" type="application/octet-stream" sparkle:edSignature="6IcPTCjHm5gg557QEG84YibBTKN9vJxI6JNPpm0E7Tl15rrU+ksLZJiNfRtec10OTz8ePQaqcniC+Tb2eZQUDQ==" />
         </item>
     </channel>
 </rss>

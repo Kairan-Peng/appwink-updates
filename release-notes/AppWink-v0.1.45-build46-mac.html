@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AppWink 0.1.45 Release Notes</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f5f7;
+      color: #111827;
+    }
+    main {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 40px 24px 56px;
+    }
+    h1 {
+      margin: 0 0 20px;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+    h2, h3, h4, h5, h6 {
+      margin: 28px 0 12px;
+      line-height: 1.25;
+    }
+    p, li {
+      font-size: 15px;
+      line-height: 1.7;
+    }
+    p, ul, ol, pre {
+      margin: 0;
+    }
+    p + p, p + ul, p + ol, ul + p, ol + p, h2 + p, h3 + p, h2 + ul, h3 + ul, h2 + ol, h3 + ol, pre + p, p + pre {
+      margin-top: 14px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    code {
+      padding: 0.15em 0.35em;
+      border-radius: 6px;
+      background: rgba(15, 23, 42, 0.08);
+      font: 0.92em ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    pre {
+      padding: 20px;
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+      overflow-x: auto;
+    }
+    pre code {
+      padding: 0;
+      background: transparent;
+      border-radius: 0;
+      font: 14px/1.6 ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+    a {
+      color: #2563eb;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { background: #0f172a; color: #e5e7eb; }
+      code { background: rgba(148, 163, 184, 0.16); }
+      pre {
+        background: #111827;
+        box-shadow: none;
+      }
+      a { color: #93c5fd; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AppWink v0.1.45</h1>
+<h2>更新</h2>
+<ul><li>修复热键窗口和设置窗口的红绿灯、窗口标题被页面内容遮住的问题。</li><li>确保首次打开、调整窗口大小、切换设置子页及重新打开窗口后，原生标题栏仍位于内容上方。</li><li>这是首个公开提供安装包的免费开源版本，无需试用、激活、许可证或登录；保留既有快捷键、文件书签和功能设置。</li></ul>
+<h2>安装</h2>
+<p>从本版本的 GitHub Release 下载 universal <code>.dmg</code>，将 AppWink 拖入 Applications。 支持 macOS 14 或更新版本，以及 Apple Silicon 和 Intel。 安装包保留 Developer ID 签名、Apple 公证和现有 Sparkle 更新信任链。 旧用户升级后可检查系统辅助功能和登录项状态；无需清空本机配置。</p>
+<h2>验证范围</h2>
+<ul><li>新增两项 AppKit 回归测试，覆盖初次内容挂载、重新配置及调整窗口大小时的原生按钮命中和标题层级。</li><li>本机独立 QA 检查热键窗口、设置窗口、设置子页返回、关闭重开、缩放及浅色/深色外观。</li><li>完整构建、测试与 universal 打包验证；实际登录启动、多显示器和全部物理输入组合不属于本次窗口修复的验收结果。</li></ul>
+<h2>English</h2>
+<ul><li>Fixes native window controls and titles being covered by content in the hotkey and Settings windows.</li><li>Preserves titlebar ordering after initial attachment, resizing, Settings navigation and reopening.</li><li>First publicly distributed free GPL-3.0-or-later installer, retaining saved settings, Developer ID signing, Apple notarization and existing Sparkle update trust.</li></ul>
+<p>Download the universal DMG for macOS 14 or later from this release and drag AppWink to Applications.</p>
+  </main>
+</body>
+</html>
